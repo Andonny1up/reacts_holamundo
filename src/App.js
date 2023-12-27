@@ -1,20 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import {Component} from 'react'
 
-const Li = ({children}) =>{
-  return(
-    <li className='clase-li'>{children}</li>
-  )
+class App extends Component {
+    render() {
+        return (
+            <div>
+                <h1>React App</h1>
+            </div>
+        )
+    }
 }
 
-const App = ()=>{
-  const valor = 'feliz'
-  return (
-    <ul className="clase-css">
-      Chanchito {valor}
-      <Li estado="feliz">valor de li</Li>
-    </ul>
-  );
-}
-
-export default App;
+export default App
